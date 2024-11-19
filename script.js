@@ -31,8 +31,8 @@ let word = prompt('inserisci una parola');
 let arr = getArray(word);
 console.log(arr);
 
-let answer = reverseArr(arr);
-console.log(answer);
+let message = reverseArr(arr);
+console.log(message);
 
 
 function getArray(parola){
@@ -43,9 +43,11 @@ function getArray(parola){
 
 function reverseArr (arrResult){
     newArr = [];
+    
     for (let i = arrResult.length -1; i >= 0; i--) {
         newArr.push(arrResult[i]);
         newArr.join();
+        message=""
         if (arrResult[i] === newArr[i]) {
             message = `La parola ${word} è palindroma`;
             
@@ -53,5 +55,5 @@ function reverseArr (arrResult){
             message = `La parola ${word} NON è palindroma`;
         }    
     }
-    return answer;
+    return message;
 }
