@@ -8,35 +8,6 @@
 */
 
 /*let word = prompt('inserisci una parola');
-
-let arr = getArray(word);
-console.log(arr);
-
-let palArr = reverseArr(arr);
-console.log(palArr);
-
-
-
-
-function getArray(parola){
-    let arr = parola.split("");
-    return arr;
-    
-}
-
-function reverseArr (arrResult){
-    let palArr = [];
-    for (let i = arrResult.length; i > 0; i--) {
-      palArr += arrResult.at(i);
-      
-        
-        
-    }
-    return palArr;   
-
-}
-*/
-let word = prompt('inserisci una parola');
 let arr = word.split("");
 console.log(arr);
 
@@ -54,4 +25,33 @@ for (let i = arr.length -1; i >= 0; i--) {
 }
 console.log(newArr);
 console.log(message);
+*/
+let word = prompt('inserisci una parola');
 
+let arr = getArray(word);
+console.log(arr);
+
+let answer = reverseArr(arr);
+console.log(answer);
+
+
+function getArray(parola){
+    let arr = parola.split("");
+    return arr;
+    
+}
+
+function reverseArr (arrResult){
+    newwArr = [];
+    for (let i = arrResult.length -1; i >= 0; i--) {
+        newArr.push(arrResult[i]);
+        newArr.join();
+        if (arrResult[i] === newArr[i]) {
+            message = `La parola ${word} è palindroma`;
+            
+        } else{
+            message = `La parola ${word} NON è palindroma`;
+        }    
+    }
+    return answer;
+}
