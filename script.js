@@ -6,3 +6,17 @@
 -mettere a confronto i 2 array generati 
 -se gli array corrispondono generare un messaggio: la parola è palindroma, viceversa se la parola non è palindroma
 */
+
+let word = prompt('inserisci una parola');
+
+let arr = getArray(word)
+console.log(arr);
+
+
+
+
+function getArray(parola){
+    let arr = parola.split("");
+    return arr;
+    
+}   
