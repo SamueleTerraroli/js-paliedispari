@@ -43,16 +43,15 @@ console.log(arr);
 newArr=[]
 for (let i = arr.length -1; i >= 0; i--) {
     newArr.push(arr[i]);
-    let message= "";
-if (arr[i] === newArr[i]) {
-    message = `La parola ${word} è palindroma`
+    newArr.join();
+    if (arr[i] === newArr[i]) {
+        message = `La parola ${word} è palindroma`
+        
+    } else{
+        message = `La parola ${word} NON è palindroma`
+    }
     
-} else{
-    message = `La parola ${word} NON è palindroma`
-}
-console.log(message);
 }
 console.log(newArr);
-
-
+console.log(message);
 
