@@ -42,7 +42,7 @@ function getArray(parola){
 }
 
 function reverseArr (arrResult){
-    newwArr = [];
+    newArr = [];
     for (let i = arrResult.length -1; i >= 0; i--) {
         newArr.push(arrResult[i]);
         newArr.join();
