@@ -9,8 +9,11 @@
 
 let word = prompt('inserisci una parola');
 
-let arr = getArray(word)
+let arr = getArray(word);
 console.log(arr);
+
+let palArr = reverseArr(arr);
+console.log(palArr);
 
 
 
@@ -19,4 +22,17 @@ function getArray(parola){
     let arr = parola.split("");
     return arr;
     
-}   
+}
+
+function reverseArr (arrResult){
+    let palArr = [];
+    for (let i = arrResult.length; i > 0; i--) {
+      palArr += arrResult.at(i);
+      
+        
+        
+    }
+    return palArr;   
+
+}
+
