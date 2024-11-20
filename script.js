@@ -8,13 +8,13 @@
 */
 
 
-let word = prompt('inserisci una parola');
+let word = prompt('inserisci una parola').toLowerCase();
 
 let arr = getArray(word);
 //console.log(arr);
 
 
-let message = reverseArr(arr);
+let message = getResult(arr);
 console.log(message);
 
 
@@ -24,7 +24,7 @@ function getArray(parola){
     
 }
 
-function reverseArr (arrResult){
+function getResult (arrResult){
     newArr = [];
     let message=""
     for (let i = arrResult.length -1; i >= 0; i--) {
@@ -40,10 +40,3 @@ function reverseArr (arrResult){
     }
     return message;
 }
-
-/*function wordUpperCase (parolaMaiuscola){
-    const arrUpper = parolaMaiuscola.substr.toUpperCase();
-
-    return arrUpper;
-}
-*/
